@@ -1,3 +1,68 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<p>I'm rose</p>
+<div>
+  <div id="navbar" class="justify-content-center">
+    <a href="#about-me">About me</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+  </div>
+
+  <div id="large-header" class="large-header">
+    <section id="main-cover" class="demo mb-5">
+      <canvas id="demo-canvas" style="width:100%"></canvas>
+      <h1 class="main-title">Rose <span class="thin">Moulan</span></h1>
+      <a href="#"><span></span><span></span><span></span>Scroll</a>
+    </section>
+  </div>
+
+  <div class="container">
+    <section id="about-me" class="content mt-5 justify-content-center">
+      <h2 class="background mb-5"><span>Who I am so far</span></h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="<%= asset_path( 'IMG_0534.jpg' ) %>" style="width:100%"/>
+        </div>
+        <div class="col-4">
+          <h5 class="mb-5">A few words about me</h5>
+          <p class="mb-5">Hi, my name is Rose, and I am a currently a student at EDHEC Business School enrolled in the MSc Data Analysis & Artificial Intelligence.</p>
+          <p>I see myself as highly motivated person with the right skill set in mind. My main objective is to get better, by learning, seeking opportunities and contributing.</p>
+        </div>
+        <div class="col-4">
+          <ul>
+            <li class='perso-infos'><i class="fas fa-birthday-cake"></i> <strong>birthday:  </strong>09/01/1996</li>
+            <li class='perso-infos'><i class="fas fa-phone"></i> <strong>phone:  </strong>+33 6 32 26 91 99</li>
+            <li class='perso-infos'><i class="fas fa-envelope-open"></i> <strong>email:  </strong>rose.moulan@edhec.com</li>
+            <li class='perso-infos'><i class="fab fa-linkedin"></i> <strong>linkedin:  </strong>https://www.linkedin.com/in/rose-moulan/</li>
+            <li class='perso-infos'><i class="fas fa-map-marker"></i> <strong>address:  </strong>Lille, France</li>
+            <li class='perso-infos'><i class="fas fa-car"></i> <strong>driving license:  </strong>yes</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="content mt-5">
+      <div>
+        <h2 class="background mb-5"><span>What I've studied so far</span></h2>
+        <div class="row">
+          <div class="col-6"><img src="<%= asset_path( 'lewagon.png' ) %>" style="width:90%"/></div>
+          <div class="col-6"><p>Le wagon</p></div>
+        </div>
+        <div class="row">
+          <div class="col-6"><p>EDHEC</p></div>
+          <div class="col-6"><img src="<%= asset_path( 'edhec.png' ) %>" style="width:90%"/></div>
+        </div>
+        <div class="row">
+          <div class="col-6"><img src="<%= asset_path( 'JDS.svg' ) %>" style="width:90%"/></div>
+          <div class="col-6"><p>Le wagon</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="content mt-5">
+      <div>
+        <h2 class="background mb-5"><span>What I've done so far</span></h2>
+        <p>Dolorem Dolorem rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore doloDolorem rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore doloDolorem rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore dolores rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.res rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.res rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore dolores rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.</p>
+      </div>
+    </section>
+  </div>
+
+</div>
