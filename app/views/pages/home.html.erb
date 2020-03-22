@@ -20,15 +20,15 @@
       <h2 class="background mb-5"><span>Who I am so far</span></h2>
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <img src="<%= asset_path( 'IMG_0534.jpg' ) %>" style="width:100%"/>
           </div>
-          <div class="col-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 few-words">
             <h5 class="mb-5">A few words about me</h5>
             <p class="mb-5">Hi, my name is Rose, and I am a currently a student at EDHEC Business School enrolled in the MSc Data Analysis & Artificial Intelligence.</p>
             <p>I see myself as highly motivated person with the right skill set in mind. My main objective is to get better, by learning, seeking opportunities and contributing.</p>
           </div>
-          <div class="col-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 contact-info">
             <ul>
               <li class='perso-infos'><i class="fas fa-birthday-cake"></i> <strong>birthday:  </strong>09/01/1996</li>
               <li class='perso-infos'><i class="fas fa-phone"></i> <strong>phone:  </strong>+33 6 32 26 91 99</li>
@@ -55,13 +55,14 @@
         <li>
           <div class="shadow-lg">
             <img src="<%= asset_path( 'edhec.png' ) %>" style="width:100%; background-color: rgba(255,255,255,0.95);"/>
-            <p class="text-timeline mb-0"><time>2016-2020, Lille</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <p class="text-timeline mb-0 pb-0"><time>2016-2020, Lille</time>Graduation date : 2020</p>
+            <p class="text-timeline mb-0 pt-0">MSc in Data Analytics and Artificial Intelligence – Data Science track</p>
           </div>
         </li>
         <li>
           <div class="shadow-lg">
             <img src="<%= asset_path( 'JDS.svg' ) %>" style="width:100%; background-color: rgba(255,255,255,0.95);padding: 20px;"/>
-            <p class="text-timeline mb-0"><time>2014-2016, Paris</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <p class="text-timeline mb-0"><time>2014-2016, Paris</time> Pre-Engineer Administration programme with a concentration in Mathematics for national competitive examinations to enter French engineers’ schools</p>
           </div>
         </li>
       </ul>
@@ -70,77 +71,102 @@
 
     <section id="experience" class="portfolio">
       <h2 class="background mb-5"><span>What I've done so far</span></h2>
-      <div class="content container" style="width:1000px">
+      <div class="content m-5">
 
         <div class="projects ">
 
-          <div class="project  ">
-            <div class="project-image">
-              <img src="<%= asset_path( 'woop1.jpg')%>" style="width:50%"/>
+
+          <div class="row">
+            <div class="col-4 project d-flex flex-row justify-content-center">
+              <div class="project-image">
+                <img src="<%= asset_path( 'woop1.jpg')%>"/>
+              </div>
+              <div class="project-title d-flex flex-column justify-content-center">
+                <time>Jan-Aug 2019</time>
+                <h2>Digital Marketing Intern</h2>
+                <h4>Auckland, New Zealand</h4>
+              </div>
+              <div class="project-description">
+                <ul>
+                  <li>Analysed data to understand why a marketing campaigns is working or not</li>
+                  <li>Executed marketing campaigns to maximise customer acquisition and brand awareness according to upstream analysis </li>
+                  <li>Launched a new delivery area in February and the new branding in March</li>
+                  <li>Built a TV campaign from ideation, script writing, shooting and finalization.</li>
+                </ul>
+              </div>
             </div>
-            <div class="project-title"  style="right:-255px">
-              <h2>Digital Marketing Intern</h2>
-            </div>
-            <div class="project-description">
-              <h6>Auckland, New Zealand</h6>
+           <div class="col-4 project d-flex flex-row justify-content-center">
+             <div class="project-image">
+               <img src="<%= asset_path( 'amazon.jpg')%>"/>
+             </div>
+             <div class="project-title d-flex flex-column justify-content-center">
+               <time>Jul-Dec 2018</time>
+               <h2>Operation intern</h2>
+               <h4>Lille, France</h4>
+             </div>
+             <div class="project-description">
+               <ul>
+                 <li>In charge of a continious improvement project concerning the ergonomics of a packing station. Offered and tested potential solutions and implemented the best ones</li>
+                 <li>Interacted with highly efficient managers, technology development teams, and front line associates to think broadly about solutions to the most complex business and operational challenges faced by amazon</li>
+                 <li>With time, lead a team of 200 workers during Q4</li>
+               </ul>
+             </div>
+           </div>
+           <div class="col-4 project d-flex flex-row justify-content-center">
+             <div class="project-image">
+               <img src="<%= asset_path( 'bde.png')%>" />
+             </div>
+             <div class="project-title d-flex flex-column justify-content-center">
+               <time>2016-2018</time>
+               <h2>Digital manager</h2>
+               <h4>Lille, France</h4>
+             </div>
+             <div class="project-description">
               <ul>
-                <li>Analysed data to understand why a marketing campaigns is working or not</li>
-                <li>Analysed how customers are buying and built campaigns according to the findings</li>
-                <li>Executed marketing campaigns to maximise customer acquisition and brand awareness.</li>
-                <li>Created new multi-channel campaigns, managing social media, reviewing digital strategy...</li>
-                <li>Built a TV campaign from ideation, script writing, shooting and finalization.</li>
-                <li>Hands on sales</li>
+                <li>Programmed, maintained and restored the Student Union website (from Joomla to Wordpress and OVH to Azure within 2 months)</li>
+                <li>Created and managed online ticketing and means of payment for over 2000 students (flow of 550 000€)</li>
+                <li>Managed a team of 7 and the relationship between my team and the office</li>
               </ul>
-            </div>
+             </div>
+           </div>
           </div>
 
-          <div class="project" style="margin-left:auto">
-            <div class="project-image">
-              <img src="<%= asset_path( 'amazon.jpg')%>" style="width:50%"/>
+          <div class="row d-flex flex-row justify-content-center">
+            <div class="col-4 project d-flex flex-row justify-content-center">
+              <div class="project-image">
+                <img src="<%= asset_path( 'ge.png')%>"/>
+              </div>
+              <div class="project-title d-flex flex-column justify-content-center">
+                <time>2016-2018</time>
+                <h2>Logistic</h2>
+                <h4>Lille, France</h4>
+              </div>
+              <div class="project-description">
+                <ul>
+                  <li>Supervised the organisation of the association events (cooking lessons, afterworks, ”Coloc’ Presque Parfaite”, Toque’Edgec which is the biggest student cooking competition in France) in accordance with the association’s budget</li>
+                  <li>Determined the schedule of every association’s member during our events</li>
+                </ul>
+              </div>
             </div>
-            <div class="project-title " style="right:-120px">
-              <h2>Operation intern</h2>
-            </div>
-            <div class="project-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi magni consequatur dolores distinctio quod accusamus voluptatum obcaecati animi expedita rem odio explicabo veritatis voluptas ducimus voluptate earum laborum, qui maiores doloremque deserunt sapiente corporis et culpa, nihil fuga. Sit nemo maxime itaque maiores iure, similique ratione veritatis quidem nulla explicabo.</p>
-            </div>
+           <div class="col-4 project d-flex flex-row justify-content-center">
+             <div class="project-image">
+               <img src="<%= asset_path( 'youshould.jpg')%>"/>
+             </div>
+             <div class="project-title d-flex flex-column justify-content-center">
+               <time>Jun-Aug 2017</time>
+               <h2>Business Developer Intern</h2>
+               <h4>Paris, France</h4>
+             </div>
+             <div class="project-description">
+              <ul>
+                <li>Youshould is one of the leader in bar and restaurant online reservations</li>
+                <li>Booking division : Suggested offers according to the customer criterias and managed bookings and customer follow-ups. Provided good customer service throught phone calls and the online chat</li>
+                <li>Business Developer divsion : Listed, prospected and met potential partners and managed a client porfolio and ensured regular monitoring of our partners</li>
+              </ul>
+             </div>
+           </div>
           </div>
 
-          <div class="project  ">
-            <div class="project-image">
-              <img src="<%= asset_path( 'bde.png')%>" style="width:50%"/>
-            </div>
-            <div class="project-title" style="right:-120px">
-              <h2>Digital manager</h2>
-            </div>
-            <div class="project-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi asperiores odio libero, molestiae at suscipit totam sequi, delectus temporibus. Provident itaque illum animi cupiditate quaerat! Id inventore, excepturi sequi totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure ex repudiandae, enim maxime.</p>
-            </div>
-          </div>
-
-          <div class="project" style="margin-left:auto">
-            <div class="project-image">
-              <img src="<%= asset_path( 'ge.png')%>" style="width:50%"/>
-            </div>
-            <div class="project-title">
-              <h2>Logistic</h2>
-            </div>
-            <div class="project-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi asperiores odio libero, molestiae at suscipit totam sequi, delectus temporibus. Provident itaque illum animi cupiditate quaerat! Id inventore, excepturi sequi totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure ex repudiandae, enim maxime.</p>
-            </div>
-          </div>
-
-          <div class="project  ">
-            <div class="project-image">
-              <img src="<%= asset_path( 'youshould.jpg')%>"style="width:50%"/>
-            </div>
-            <div class="project-title" style="right:-170px">
-              <h2>Business Developer</h2>
-            </div>
-            <div class="project-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi asperiores odio libero, molestiae at suscipit totam sequi, delectus temporibus. Provident itaque illum animi cupiditate quaerat! Id inventore, excepturi sequi totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure ex repudiandae, enim maxime.</p>
-            </div>
-          </div>
 
         </div>
       </div>
@@ -152,7 +178,7 @@
       <h2 class="background mb-5 pt-1"><span style="background-color: white">Languages I speak so far</span></h2>
       <div class="container">
         <div class="row justify-content-center mb-3">
-          <div class="progress col-4" style="flex:none; margin:20px" data-percentage="100">
+          <div class="progress col-xs-12 col-sm-6 col-md-4 col-lg-4" style="flex:none; margin:20px" data-percentage="100">
             <span class="progress-left">
               <span class="progress-bar"></span>
             </span>
@@ -165,7 +191,7 @@
             </div>
           </div>
 
-          <div class="progress col-4" style="flex:none; margin:20px" data-percentage="90">
+          <div class="progress col-xs-12 col-sm-6 col-md-4 col-lg-4" style="flex:none; margin:20px" data-percentage="90">
             <span class="progress-left">
               <span class="progress-bar"></span>
             </span>
@@ -179,7 +205,7 @@
             </div>
           </div>
 
-          <div class="progress col-4" style="flex:none; margin:20px" data-percentage="50">
+          <div class="progress col-xs-12 col-sm-6 col-md-4 col-lg-4" style="flex:none; margin:20px" data-percentage="50">
             <span class="progress-left">
               <span class="progress-bar"></span>
             </span>
@@ -192,7 +218,7 @@
             </div>
           </div>
 
-          <div class="progress col-4" style="flex:none; margin:20px" data-percentage="55">
+          <div class="progress col-xs-12 col-sm-6 col-md-4 col-lg-4" style="flex:none; margin:20px" data-percentage="55">
             <span class="progress-left">
               <span class="progress-bar"></span>
             </span>
@@ -211,23 +237,206 @@
     <section id="abilities" class="content mt-1">
       <div>
         <h2 class="background mb-5"><span>My skills so far</span></h2>
-        <div class="container">
-          <ul>
-            <li>R</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Joomla & Wordpress</li>
-            <li>Tableau</li>
-            <li>VBA</li>
-            <li>Adobe Anima</li>
-            <li>Photoshop</li>
-            <li>Figma</li>
-          </ul>
+      </div>
+      <div class="container" style="width:500px">
+        <div class="raw justify-content-center">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/rstudio.png')%>"/>
+              </div>
+              <div class="back">
+                <p>R</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/python.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Python</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/tableau.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Tableau</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/ruby.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Ruby</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/rubyonrails.png')%>"/>
+              </div>
+              <div class="back">
+                <p>RubyonRails</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/sql.png')%>"/>
+              </div>
+              <div class="back">
+                <p>SQL</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/html.png')%>"/>
+              </div>
+              <div class="back">
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/css.png')%>"/>
+              </div>
+              <div class="back">
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/jss.png')%>"/>
+              </div>
+              <div class="back">
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/wordpress.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Wordpress</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/joomla_logo.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Joomla</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/vba.png')%>"/>
+              </div>
+              <div class="back">
+                <p>VBA</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/animate.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Animate</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/ps.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Photoshop</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/indesign.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Indesign</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/googleanalytics.png')%>"/>
+              </div>
+              <div class="back">
+                <p style="font-size: 15px;">GoogleAnalytics</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <img class="front" src="<%= asset_path('skills/figma.png')%>"/>
+              </div>
+              <div class="back">
+                <p>Figma</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
 
     <section id="hobbies" class="content mt-1">
       <div>

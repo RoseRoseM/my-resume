@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+// body {
+//   background: #333;
+// }
+
+.raw {
+  // height: 500px;
+  // width: 700px;
+  margin: auto;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+/* perspective */
+
+.flip-container {
+  perspective: 1000;
+  margin: 10px;
+  float: left;
+}
+/* turning on hover */
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 20px;
+}
+/* flipping speed here */
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+/* making the the other side hidden while flipping */
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* front side is in front of a back side */
+
+.front {
+  z-index: 2;
+  background-color: transparent;
+  color: white;
+}
+/* back side */
+
+.back {
+  transform: rotateY(180deg);
+  background-color: lightblue;
+}
+
+.back p {
+  font-size: 18px;
+  margin-top: 0px;
+  font-family: 'Kaushan Script', cursive;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .raw {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .raw {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .raw {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .raw {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .raw {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
